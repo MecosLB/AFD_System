@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Implementación AFD</title>
+    <link rel="stylesheet" href="style.css?v=0.1">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="text-center">
+        <h1>Sistema AFD: Web/Ebay</h1>
+    </header>
+    <!-- Hidden input -->
+    <input id="inputUpload" type="file">
+    <!-- Content section -->
+    <section id="content" class="container d-flex mx-auto text-center">
+        <label for="txtContent">Contenido en texto plano</label>
+        <textarea name="txtContent" id="txtContent" cols="30" rows="15" placeholder="Ingrese texto o suba un archivo"
+            style="resize: none; border-radius: 10px;"></textarea>
+        <p>Archivo seleccionado: <span id="fileName">Ninguno</span></p>
+        <div>
+            <button id="uploadFile" class="btn mx-auto">SUBIR ARCHIVO</button>
+            <button id="countText" class="btn mx-auto">CONTAR</button>
+        </div>
+    </section>
+    <!-- Result section-->
+    <section id="result" class="container mx-auto">
+        <h2 class="d-flex text-center">Web<span id="webCount">0</span></h2>
+        <h2 class="d-flex text-center">Ebay<span id="ebayCount">0</span></h2>
+    </section>
+    <script src="script.js?v=0.1"></script>
+</body>
+
+</html>
